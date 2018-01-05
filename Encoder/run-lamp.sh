@@ -26,18 +26,23 @@ if [ $LOG_LEVEL != 'warn' ]; then
 fi
 
 # enable php short tags:
+echo "enabling php short tags"
 /bin/sed -i "s/short_open_tag\ \=\ Off/short_open_tag\ \=\ On/g" /etc/php/7.0/apache2/php.ini
 
 # set max_execution_time to 7200
+echo "setting max_execution_time to 7200"
 /bin/sed -e 's/max_execution_time = 30/max_execution_time = 7200/' -i /etc/php/7.0/apache2/php.ini
 
 # set post_max_size to 100M
+echo "setting post_max_size to 100M"
 /bin/sed -e 's/post_max_size = 8M/post_max_size = 100M/' -i /etc/php/7.0/apache2/php.ini
 
 # set upload_max_filesize to 100M
+echo "setting upload_max_filesize to 100M"
 /bin/sed -e 's/upload_max_filesize = 2M/upload_max_filesize = 100M/' -i /etc/php/7.0/apache2/php.ini
 
 # set memory_limit to 512M
+echo "setting memory_limit to 512M"
 /bin/sed -e 's/memory_limit = 128M/memory_limit = 512M/' -i /etc/php/7.0/apache2/php.ini
 
 # stdout server info:
