@@ -24,7 +24,19 @@ To run the script enter this command.
 
 ### To run the encoder
 
-`docker run -i -t -p 127.0.0.2:80:80 encoder:1 /bin/bash`
+`docker run -i -t -p 127.0.0.2:80:80 encoder:1 /usr/sbin/run-lamp.sh`
+
+### To exit
+
+`exit`
+
+### To build the streamer
+
+`docker build -t streamer:1 . `
+
+### To run the streamer
+
+`docker run -i -t -p 127.0.0.2:80:80 streamer:1 /usr/sbin/run-lamp.sh`
 
 ### To exit
 
