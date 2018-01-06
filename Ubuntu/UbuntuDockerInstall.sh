@@ -35,7 +35,7 @@ read -p "[Y/N?]: " userInput
 
 # Abort on N continue if Y
 # ERROR: ./UbuntuDockerInstall.sh: line 38: [Y: command not found
-if [ "$userInput" != "Y" ] || [ "$userInput" != "y" ]
+if [ "$userInput" != "Y" ] || [ "$userInput" != "y" ];
 then
 	exit
 fi
