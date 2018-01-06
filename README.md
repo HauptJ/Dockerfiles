@@ -1,12 +1,26 @@
 # YouPHPTube Dockerfiles
 Docker files for development.
 
+## Installing Docker for Ubuntu
+
+In the Ubuntu directory run the UbuntuDockerInstall.sh script in the terminal.
+
+`cd DockerInstall/Ubuntu`
+
+Make the script executible.
+
+`chmod +x UbuntuDockerInstall.sh`
+
+Run the script.
+
+`./UbuntuDockerInstall.sh`
+
 ## Installing Docker for Windows
 **NOTE: Requires Windows 10 Pro, Enterprise or Education**
 
 In the DockerWin10 directory run the ContainerDev.ps1 script in PowerShell.
 
-`cd DockerWin10`
+`cd DockerInstall/DockerWin10`
 
 You will have to temporarily set the execution policy to bypass to run the script.
 
