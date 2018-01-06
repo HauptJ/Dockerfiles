@@ -26,6 +26,8 @@ To run the script enter this command.
 
 `docker run -i -t -p 127.0.0.2:80:80 encoder:1 /usr/sbin/run-lamp.sh`
 
+URL: `http://127.0.0.2/YouPHPTube-Encoder/`
+
 ### To exit
 
 `exit`
@@ -36,7 +38,9 @@ To run the script enter this command.
 
 ### To run the streamer
 
-`docker run -i -t -p 127.0.0.2:80:80 streamer:1 /usr/sbin/run-lamp.sh`
+`docker run -i -t -p 127.0.0.3:80:80 streamer:1 /usr/sbin/run-lamp.sh`
+
+URL: `http://127.0.0.3/YouPHPTube/`
 
 ### To exit
 
